@@ -5,7 +5,7 @@ let long=document.getElementById("long");
 let frame=document.getElementById("frame");
 let container=document.getElementById("container")
 
-window.alert("Please Replace the API KEY")
+window.alert("Please Replace the API KEY, if needed")
 
 
 
@@ -32,9 +32,9 @@ function getLocation() {
 //fetching weather details
   function getweather(lati,longi){
 
-    //API KEY 
-   const key={API_KEY};
-   
+    // Replace your own Open Weather API Key
+   const key="1e618748a0cf1d21311cfde6a1c33507";
+
    let laat=lati.toFixed(2);
    let loong=longi.toFixed(2);
    let lang = 'en';
@@ -44,6 +44,7 @@ function getLocation() {
    
     //let url = `http://api.openweathermap.org/data/2.5/onecall?lat=${laat}&lon=${loong}&appid=${key}&units=${units}&lang=${lang}`;
     let url=`https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${loong}&appid=${key}`;
+
     //fetch the weather
     fetch(url)
       .then((resp) => {
@@ -86,6 +87,10 @@ wind.innerText= "Wind Speed :"+data.wind.speed +" Kmph";
 windd.innerText="Wind Direction :"+data.wind.deg+" degree";
 uv.innerText="Uv Index :"+data.cod;
 feels.innerText="Feels Like :"+data.main.feels_like;
+
+
+// conditions to check wind direction
+
 
 let direction=data.wind.deg;
 if(direction>=0&&direction<=5){
