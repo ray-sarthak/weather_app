@@ -5,7 +5,7 @@ let long=document.getElementById("long");
 let frame=document.getElementById("frame");
 let container=document.getElementById("container")
 
-
+window.alert("Please Replace the API KEY")
 
 
 
