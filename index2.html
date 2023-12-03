@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <div id="map">
+    <h1>Welcome to Weather App</h1>
+    <p>Here is your current location</p>
+    <div class="coord">
+        <div id="lat">1234</div>
+        <div id="long">1234</div>
+    </div>
+    <iframe id="frame" width="360" height="270" frameborder="0" style="border:0"></iframe>
+</div>
+<h1>Your Weather Data</h1>
+<div id="container">
+        <div class="cards" id="loca"></div>
+        <div class="cards" id="wind"></div>
+        <div class="cards" id="humidity"></div>
+        <div class="cards" id="timezone"></div>
+        <div class="cards" id="pressure"></div>
+        <div class="cards" id="wind-direction"></div>
+        <div class="cards" id="uv"></div>
+        <div class="cards" id="feelslike"></div>
+
+</div>
+
+<body onload="getLocation()"></body>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

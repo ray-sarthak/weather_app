@@ -1,0 +1,150 @@
+#map{
+    background: #360369;
+    height:80vh;
+    color:aliceblue;
+    border-radius:5px;
+    
+}
+.coord{
+    display:flex;
+    left:5vw;
+    position: relative;
+    
+    color:antiquewhite;
+    
+
+}
+@media screen and (max-width: 480px) {
+    .coord{
+        display:flex;
+        flex-direction: column;
+        width:100vw;
+       
+        
+    }
+    #lat,#long{
+        background: none;
+    margin-left: 2vw;
+    margin-top:1vh;
+    width: 10vw;
+    height:5vh;
+    color: antiquewhite;
+    border-radius: 5px;
+    
+    display: flex;
+    
+    
+    left:1vw;
+
+        
+    }
+    
+   
+    
+    
+  }
+
+
+
+
+
+
+
+#lat,#long{
+    background: #270846;
+    margin-left: 2vw;
+    width: 10vw;
+    height:5vh;
+    color: antiquewhite;
+    border-radius: 5px;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:1vw;
+
+}
+#frame{
+    border-radius: 10px;
+    position:relative;
+    top:5vh;
+    left:5vw;
+    width: 80vw;
+    height:50vh;
+
+}
+h1,p{
+    position: relative;
+    left:5vw;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-top: 2vw;
+
+
+}
+.cards{
+    border-radius: 10px;
+border: 2px solid #360369;
+width: 12vw;
+color:white;
+font-size: x-large;
+margin-left: 2vw;
+margin-top: 2vw;
+
+
+background:#360369;
+}
+
+@media screen and (max-width: 480px) {
+    #lat,#long{
+        background: none;
+    margin-left: 2vw;
+    margin-top:1vh;
+    width: 10vw;
+    height:5vh;
+    color: antiquewhite;
+    border-radius: 5px;
+    
+    display: flex;
+    
+    
+    left:1vw;
+
+        
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        
+        
+        margin-top: 2vw;
+    
+    
+    }
+    .cards{
+        border-radius: 10px;
+    border: 2px solid #360369;
+    width: 80vw;
+    color:white;
+    font-size: x-large;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    
+    
+    background:#360369;
+    }
+
+    #frame{
+        border-radius: 10px;
+        position:relative;
+        top:5vh;
+        left:5vw;
+        width: 80vw;
+        height:30vh;
+    
+    }
+  }
+  
