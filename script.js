@@ -31,7 +31,10 @@ function getLocation() {
   }
 //fetching weather details
   function getweather(lati,longi){
-   const key="1e618748a0cf1d21311cfde6a1c33507";
+
+    //API KEY 
+   const key={API_KEY};
+   
    let laat=lati.toFixed(2);
    let loong=longi.toFixed(2);
    let lang = 'en';
