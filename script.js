@@ -1,5 +1,5 @@
 
-
+// targeting the rewuired divs
 let lat=document.getElementById("lat");
 let long=document.getElementById("long");
 let frame=document.getElementById("frame");
@@ -11,7 +11,7 @@ let container=document.getElementById("container")
 
       
         
-
+// Api for getting current Device Location coordinates
 function getLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition);
@@ -29,7 +29,7 @@ function getLocation() {
     frame.src=`https://maps.google.com/maps?q=${lati}, ${longi}&output=embed`;
     getweather(lati,longi);
   }
-
+//fetching weather details
   function getweather(lati,longi){
    const key="1e618748a0cf1d21311cfde6a1c33507";
    let laat=lati.toFixed(2);
@@ -37,6 +37,8 @@ function getLocation() {
    let lang = 'en';
 
    let units = 'metric';
+
+   
     //let url = `http://api.openweathermap.org/data/2.5/onecall?lat=${laat}&lon=${loong}&appid=${key}&units=${units}&lang=${lang}`;
     let url=`https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${loong}&appid=${key}`;
     //fetch the weather
@@ -53,7 +55,12 @@ function getLocation() {
 
 
 }
-let loca=document.getElementById("loca");
+
+
+// targeting required divs
+
+
+        let loca=document.getElementById("loca");
         let humidity=document.getElementById("humidity");
         let timezone=document.getElementById("timezone");
         let pressure=document.getElementById("pressure");
@@ -61,6 +68,10 @@ let loca=document.getElementById("loca");
         let windd=document.getElementById("wind-direction");
         let uv=document.getElementById("uv");
         let feels=document.getElementById("feelslike");
+
+
+//Diplaying the weather data into the UI
+
 
 
 function showWeather(data){
